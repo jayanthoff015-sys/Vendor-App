@@ -48,7 +48,8 @@ It enables **admin onboarding**, **invoice uploads**, **payment tracking**, and 
   - Overdue invoices
 - Displays **recent activities** like new invoices or payments
 
-- <img width="1915" height="911" alt="Screenshot 2025-11-12 220207" src="https://github.com/user-attachments/assets/a391b0aa-1518-4281-870d-d3d86c59348a" />
+- <img width="1903" height="910" alt="Screenshot 2025-11-12 220102" src="https://github.com/user-attachments/assets/fcd6dd09-14de-4b62-abe9-a60108de02f7" />
+
 
 
 ---
