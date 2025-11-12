@@ -11,7 +11,6 @@ This platform provides a **comprehensive system** for managing vendors, invoices
 It enables **admin onboarding**, **invoice uploads**, **payment tracking**, and **alert reminders** for overdue invoices — similar to real-world accounting flows used in companies like Zerodha.
 
 ---
-<img width="1915" height="910" alt="Screenshot 2025-11-12 220225" src="https://github.com/user-attachments/assets/6d45ba9d-1c7b-4b4b-af4d-43e55cafc113" />
 
 ## 📋 Features
 
@@ -19,6 +18,12 @@ It enables **admin onboarding**, **invoice uploads**, **payment tracking**, and 
 - Onboard new vendors with contact and payment info  
 - Manage accountant and auditor roles  
 - Maintain vendor bank and tax details (TDS, GST, etc.)
+
+- <img width="1915" height="910" alt="Screenshot 2025-11-12 220225" src="https://github.com/user-attachments/assets/6d45ba9d-1c7b-4b4b-af4d-43e55cafc113" />
+
+
+<img width="1915" height="911" alt="Screenshot 2025-11-12 220207" src="https://github.com/user-attachments/assets/89d5b864-1cee-4aa7-8b22-6a34b31cf6f4" />
+
 
 ### 💰 Invoice Management
 - Add, view, edit, and delete invoices  
@@ -42,6 +47,9 @@ It enables **admin onboarding**, **invoice uploads**, **payment tracking**, and 
   - Average turnaround time
   - Overdue invoices
 - Displays **recent activities** like new invoices or payments
+
+- <img width="1915" height="911" alt="Screenshot 2025-11-12 220207" src="https://github.com/user-attachments/assets/a391b0aa-1518-4281-870d-d3d86c59348a" />
+
 
 ---
 
