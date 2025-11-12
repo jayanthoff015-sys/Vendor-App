@@ -1,16 +1,96 @@
-# React + Vite
+# 🧾 Vendor Invoicing & Payment Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application to **manage vendors, track invoices, monitor payments**, and generate alerts for overdue transactions.  
+Built for internal company use to streamline accounting and finance operations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Project Summary
 
-## React Compiler
+This platform provides a **comprehensive system** for managing vendors, invoices, and payments in an organization.  
+It enables **admin onboarding**, **invoice uploads**, **payment tracking**, and **alert reminders** for overdue invoices — similar to real-world accounting flows used in companies like Zerodha.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
+<img width="1915" height="910" alt="Screenshot 2025-11-12 220225" src="https://github.com/user-attachments/assets/6d45ba9d-1c7b-4b4b-af4d-43e55cafc113" />
 
-## Expanding the ESLint configuration
+## 📋 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 👤 Admin & Account Management
+- Onboard new vendors with contact and payment info  
+- Manage accountant and auditor roles  
+- Maintain vendor bank and tax details (TDS, GST, etc.)
+
+### 💰 Invoice Management
+- Add, view, edit, and delete invoices  
+- Attach proof of invoices or scanned copies (future backend integration)  
+- Track status: _Pending, Paid, Overdue_  
+- View invoice analytics in dashboard (Total, Pending, Overdue, Average payment time)
+
+### 💳 Payment Tracking
+- Record payment transactions with reference number  
+- Track payment methods (Bank Transfer, Cheque, Cash, etc.)  
+- Manage reconciliation for completed invoices
+
+### 🔔 Alerts & Notifications
+- Automatic reminders for overdue invoices (to be implemented with backend scheduler)  
+- Color-coded status tags for quick visibility
+
+### 📊 Dashboard
+- Shows summarized financial metrics:
+  - Total invoices
+  - Pending amount
+  - Average turnaround time
+  - Overdue invoices
+- Displays **recent activities** like new invoices or payments
+
+---
+
+## 🧱 System Design Overview
+
+### 🖥️ Frontend
+- **React.js** with functional components  
+- **React Router DOM** for client-side routing  
+- **Plain CSS** (no templates or UI frameworks)  
+- Modular page components:  
+  - `Dashboard.jsx`  
+  - `Vendors.jsx`  
+  - `Invoices.jsx`  
+  - `Payments.jsx`  
+  - `Alerts.jsx`  
+  - `Navbar.jsx`
+
+### ⚙️ Backend (Planned / Node Integration)
+- **Node.js** with **Express.js**
+- REST API routes:
+  - `POST /api/vendors` — Add vendor
+  - `POST /api/invoices` — Add invoice
+  - `POST /api/payments` — Record payment
+  - `GET /api/dashboard` — Fetch summary
+- **Mongoose + MongoDB** for database  
+  - `Vendor` — stores vendor and contact info  
+  - `Invoice` — stores invoice details and due dates  
+  - `Payment` — stores transaction data  
+  - `Document` — stores uploaded proof files  
+  - `Alert` — stores reminders and notifications  
+
+---
+
+## 🧩 Tech Stack
+
+| Layer | Technology |
+|-------|-------------|
+| Frontend | React.js, React Router DOM, CSS |
+| Backend | Node.js, Express.js |
+| Database | MongoDB with Mongoose |
+| State Management | useState, useEffect hooks |
+| Version Control | Git & GitHub |
+| Deployment | Replit / Render / Vercel (Frontend) |
+
+---
+
+## 🧑‍💻 Setup Instructions
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/<your-username>/vendor-invoice-tracker.git
+cd vendor-invoice-tracker
