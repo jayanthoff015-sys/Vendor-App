@@ -84,17 +84,6 @@ It enables **admin onboarding**, **invoice uploads**, **payment tracking**, and 
 
 ---
 
-## 🧩 Tech Stack
 
-| Layer | Technology |
-|-------|-------------|
-| Frontend | React.js, React Router DOM, CSS |
-| Backend | Node.js, Express.js |
-| Database | MongoDB with Mongoose |
-| State Management | useState, useEffect hooks |
-| Version Control | Git & GitHub |
-| Deployment | Replit / Render / Vercel (Frontend) |
-
----
 
 
