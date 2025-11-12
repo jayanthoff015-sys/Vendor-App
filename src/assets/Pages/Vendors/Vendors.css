@@ -1,0 +1,206 @@
+/* Vendors.css - plain CSS to match screenshot */
+
+.vendors-page {
+  max-width: 1180px;
+  margin: 28px auto;
+  padding: 0 18px 60px;
+  box-sizing: border-box;
+}
+
+.vendors-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.vendors-header h1 {
+  font-size: 32px;
+  margin: 0 0 6px;
+  color: #0f172a;
+}
+.vendors-header .subtitle {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* add button */
+.add-btn {
+  background: #1d4ed8; /* blue */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 0 rgba(13, 42, 148, 0.08);
+}
+.add-btn:hover { transform: translateY(-1px); }
+
+/* card/table */
+.vendors-card {
+  background: white;
+  border: 1px solid #eef2f6;
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 12px;
+}
+
+.vendors-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.vendors-table thead th {
+  text-align: left;
+  padding: 16px 20px;
+  background: #f3f5f7;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+.vendors-table tbody td {
+  padding: 18px 20px;
+  border-top: 1px solid #f1f3f5;
+  vertical-align: middle;
+  color: #374151;
+  font-size: 14px;
+}
+
+/* --- Adjusted table width and spacing --- */
+.vendors-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: auto;  /* Let columns size automatically based on content */
+  min-width: 1100px;   /* ensures long emails/names fit */
+}
+
+.vendors-table thead th {
+  text-align: left;
+  padding: 16px 24px;
+  background: #f3f5f7;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 13.5px;
+  border-radius: 6px 6px 0 0;
+  white-space: nowrap; /* Prevent header text wrapping */
+}
+
+.vendors-table tbody td {
+  padding: 16px 24px;
+  border-top: 1px solid #f1f3f5;
+  vertical-align: middle;
+  color: #374151;
+  font-size: 14px;
+  word-wrap: break-word; /* break long text if needed */
+}
+
+/* Increase padding inside long columns (like email) */
+.vendors-table td:nth-child(3),
+.vendors-table td:nth-child(4) {
+  min-width: 220px;
+}
+
+
+/* vendor name bold */
+.vendor-name { font-weight: 700; color: #111827; }
+
+/* payment terms pill */
+.terms-pill {
+  display: inline-block;
+  background: rgba(59,130,246,0.12);
+  color: #0b5ed7;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* delete button */
+.delete-btn {
+  padding: 8px 12px;
+  background: #ef4444; /* red */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.delete-btn:hover { opacity: 0.95; transform: translateY(-1px); }
+
+/* modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 15, 30, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
+  padding: 20px;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px;
+  width: 520px;
+  max-width: calc(100% - 40px);
+  box-shadow: 0 8px 24px rgba(16,24,40,0.12);
+}
+
+.modal h3 { margin: 0 0 10px; font-size: 18px; color: #0f172a; }
+
+.modal-form label {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #374151;
+}
+.modal-form input {
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ef;
+  margin-top: 6px;
+  box-sizing: border-box;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.btn-cancel {
+  background: transparent;
+  color: #374151;
+  border: 1px solid #e6e9ef;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-save {
+  background: #1d4ed8;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .vendors-table { min-width: 640px; }
+  .vendors-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .add-btn { align-self: flex-end; }
+}
