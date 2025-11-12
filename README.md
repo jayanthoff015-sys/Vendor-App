@@ -97,9 +97,4 @@ It enables **admin onboarding**, **invoice uploads**, **payment tracking**, and 
 
 ---
 
-## 🧑‍💻 Setup Instructions
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/<your-username>/vendor-invoice-tracker.git
-cd vendor-invoice-tracker
