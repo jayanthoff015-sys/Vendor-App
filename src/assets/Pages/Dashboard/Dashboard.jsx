@@ -55,7 +55,7 @@ const Dashboard = () => {
             <table className="activity-table">
               <thead>
                 <tr>
-                  <th>DATE</th>
+                  <th>DATE </th>
                   <th>ACTIVITY</th>
                   <th>VENDOR</th>
                   <th className="amount-col">AMOUNT</th>
